@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tts3-extended"
+version = "0.1.0"
+description = "TTS3 Extended (tts3x): local-first import/adapt/synth/captions/read pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "openai>=1.40.0",
+  "rich>=13.7.0",
+  "python-dotenv>=1.0.1",
+  "prompt_toolkit>=3.0.47",
+]
+
+[project.optional-dependencies]
+pdf = ["pypdf>=4.2.0"]
+docx = ["docx2txt>=0.8"]
+apple = ["pyobjc>=10.0"]
+dev = ["pytest>=8.2.0"]
+
+[project.scripts]
+tts3x = "tts3x.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
