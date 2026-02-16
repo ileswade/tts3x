@@ -8,6 +8,11 @@ TTS3 Extended (tts3x) is a standalone local-first content pipeline for TTS workf
 - Emit a synth sidecar (`.synth.json`) so later enrichment is exact.
 - Stay infrastructure-neutral (local processing first; cloud sync later).
 
+## License + Attribution
+- Licensed under Apache License 2.0 (`LICENSE`).
+- Attribution must be preserved in redistributions and derivative works (`NOTICE`).
+- Required credit: Iles Wade as the original author of TTS3 Extended (`tts3x`).
+
 ## Install
 ```bash
 cd /Users/ileswade/ris/projects/tts3-extended
